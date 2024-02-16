@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: 'PT Serif', serif;
+}
+
+body{
+    background-color: black ;
+    height: 100vh;
+}
+
+/*PÁGINA INICIAL*/
+/*MENU*/
+.menu{
+    background-color: black;
+    width: 80px;
+    height: 100%;
+    padding: 40px 0 40px 1px;
+    box-shadow: 3px 0 0 #B132F5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+.menu.expandir{
+    width: 300px;
+}
+
+.btn-list{
+    width: 100%;
+    padding-left: 10px;
+}
+.btn-list > i{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 30px;
+    transition: 2s;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+ul li.item-menu{
+    transition: 2s;
+}
+ul li.ativo{
+    background-color:#B132F5;
+}
+ul li.item-menu:hover{
+    background-color: #B132F5;
+}
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+ul li.item-menu a .text{
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+.menu.expandir .text{
+    margin-left: 40px;
+    opacity: 1;
+}
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+/*APRESENTAÇÃO*/
+.left{
+    background-color: black;
+    width: 50%;
+    height: 30%;
+    margin-top: 200px;
+    align-items: center;
+    margin-left: 110px;
+}
+.left h1{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 1px;
+}
+.left h2{
+    font-size: 30px ;
+    color: #B132F5;
+    letter-spacing: 1px;
+}
+.left .button button{
+   align-items: center;
+   font-size: 25px;
+   display: flex;
+   border-radius: 8px;
+   background-color: #c677f0;
+   padding: 10px ;
+   letter-spacing: 1px;
+   border: 3px solid rgb(92, 1, 92);
+}
+.left .button button:hover{
+    background-color: #ce90f0;
+    border: 3px solid rgb(104, 47, 104);
+}
+.left .button button a{
+    color:black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.left .button button a:hover{
+    color: purple;
+    font-weight: bolder;
+}
+
+.right{
+    width: 35%;
+    height: 25%;
+    margin-top: -250px;
+    align-items: center;
+    margin-left: 750px;
+}
+.right img{
+    width: 530px;
+    right: 300px;
+    border-radius: 50px;
+    border: 2px solid #B132F5 ;
+}
+
+/*SOBRE MIM*/
+.title{
+    text-align: center;
+    width: 90%;
+    height: 80px;
+    margin-left: 110px;
+    margin-top: 30px;
+}
+.title h1{
+    font-size: 55px;
+    letter-spacing: 1px;
+    color: white;
+}
+.area-text{
+    margin-left: 110px;
+    width: 50%;
+    height: 500px;
+}
+.area-text h1{
+    color: #B132F5;
+    font-size: 30px;
+    letter-spacing: 1px
+}
+.area-text h2{
+    color: white;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+.area-text span{
+    color: #c677f0;
+    font-size: 23px;
+    letter-spacing: 1px
+}
+.area-img{
+    width: 35%;
+    height: 500px;
+    margin-top: -500px;
+    align-items: center;
+    margin-left: 750px;
+}
+.area-img img{
+    width: 530px;
+    right: 300px;
+    border-radius: 50px;
+    border: 2px solid #B132F5 ;
+}
+
+/*PROJETOS*/
+.container{
+    width: 1170px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 110px;
+    position: relative;
+}
+.container .card{
+    position: relative;
+    padding: 10px;
+    width: 330px;
+    background-color: black;
+    margin: 20px;
+    border: 1px;
+    border-radius: 5%;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+}
+.container .card img{
+    width: 250px;
+    height: 230px;
+    transition: 0.5s;
+    border: 4px solid #ab25f3;
+    border-radius: 15px;
+}
+.container .card h2{
+    color: white;
+    font-size: 2rem;
+}
+.container .card:hover{
+    background-color:#c677f0;
+    margin-top: -30px;
+}.container .card:hover h2{
+    color: black;
+}
+/*CONTATO*/
+.area-contact{
+    display: flex;
+    flex-direction:column;
+    margin-left: 110px;
+    align-items: center;
+}
+.area-contact .box{
+        padding: 10px;
+        width: 500px;
+        height: 65px;
+        background-color: white;
+        margin: 20px;
+        border: 3px solid #B132F5;
+        border-radius: 20px;
+        transition: .2s;
+        align-items: center;
+        overflow: hidden;
+}
+.area-contact .box a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    line-height: 40px;
+    padding: 0 4%;
+}
+.area-contact .box  a > i{
+    font-size: 30px;
+    color: #ab25f3;
+}
+.area-contact .box  a h1{
+    font-size: 22px;
+    margin-left: 130px;
+    color: #ab25f3;
+
+}
+.area-contact .box:hover{
+    background-color: #B132F5;
+    border: 3px solid white;
+}
+.area-contact .box:hover h1{
+    color: white;
+}
+.area-contact .box:hover a > i{
+    color: white;
+}
